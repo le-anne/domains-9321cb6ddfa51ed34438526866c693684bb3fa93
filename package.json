@@ -2,10 +2,9 @@
   "name": "domains",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "webpack --mode production",
+    "build": "webpack --config webpack.config.js",
     "preview": "vite preview",
     "start": "react-scripts start"
   },
