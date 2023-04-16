@@ -281,7 +281,7 @@ eval("module.exports = JSON.parse('{\"_format\":\"hh-sol-artifact-1\",\"contract
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	!function() {
-/******/ 		__webpack_require__.p = "/lovemintedApp/";
+/******/ 		__webpack_require__.p = "/lovemintedApp";
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */
