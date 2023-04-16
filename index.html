@@ -3,14 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" href="./src/assets/favicon.ico" />
+    
+    <link rel="manifest" href="/manifest.json">
+
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LoveMinted</title>
   <script defer src="/lovemintedApp/bundle.js"></script></head>
   <body>
     <div id="root"></div>
-    <script src="/dist/bundle.js"></script>
+    <script type="module" src="/src/main.js"></script>
 
+    <script src="../dist/bundle.js"></script>
     <script type="module" src="./src/main.jsx"></script>
   </body>
 </html>
