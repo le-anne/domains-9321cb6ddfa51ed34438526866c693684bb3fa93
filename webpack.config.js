@@ -3,7 +3,6 @@ const path = require("path");
 
 module.exports = {
   mode: process.env.NODE_ENV || 'development',
-
   entry: "./src/App.js",
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -19,7 +18,7 @@ module.exports = {
         },
       },
       {
-        test: /\.css$/,
+        test: /\.css$/i,
         use: ["style-loader", "css-loader"],
       },
       {
@@ -27,16 +26,19 @@ module.exports = {
         use: [
           {
             loader: "file-loader",
-            options: {
-              outputPath: "assets",
-              name: "[name].[ext]",
-            },
           },
         ],
       },
       {
         test: /\.svg$/,
-        use: ["@svgr/webpack", "url-loader"],
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192,
+            },
+          },
+        ],
       },
     ],
   },

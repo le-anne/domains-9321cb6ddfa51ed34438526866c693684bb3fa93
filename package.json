@@ -9,7 +9,6 @@
     "start": "react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
-    
   },
   "dependencies": {
     "ethers": "^6.1.0",
@@ -27,6 +26,7 @@
     "babel-loader": "^9.1.2",
     "gh-pages": "^5.0.0",
     "html-webpack-plugin": "^5.5.0",
+    "url-loader": "^4.1.1",
     "vite": "^4.2.0",
     "webpack": "^5.76.2",
     "webpack-cli": "^5.0.1",
