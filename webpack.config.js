@@ -2,13 +2,12 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 
 module.exports = {
-  
-  mode: process.env.NODE_ENV || 'development',
+  mode: process.env.NODE_ENV || "development",
   entry: "./src/App.js",
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
-    publicPath: process.env.PUBLIC_URL || "/", // Add this line // Replace <your-repo-name> with the actual name of your repository  
+    publicPath: "lovemintedApp" || "/", // Add this line // Replace <your-repo-name> with the actual name of your repository
   },
   module: {
     rules: [
@@ -35,7 +34,7 @@ module.exports = {
         test: /\.svg$/,
         use: [
           {
-            loader: 'url-loader',
+            loader: "url-loader",
             options: {
               limit: 8192,
             },
@@ -50,7 +49,7 @@ module.exports = {
     }),
   ],
   resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: [".js", ".jsx"],
     alias: {},
   },
   devServer: {
