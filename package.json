@@ -2,7 +2,6 @@
   "name": "loveminted",
   "version": "1.0.0",
   "homepage": "https://le-anne.github.io/lovemintedApp/",
-
   "scripts": {
     "dev": "vite",
     "build": "PUBLIC_URL='/lovemintedApp' webpack --config webpack.config.js",
