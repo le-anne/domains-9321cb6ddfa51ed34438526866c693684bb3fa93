@@ -85,13 +85,16 @@ header {
   background: black;
   border-radius: 16px;
   padding: 12px 20px;
-  height: 39%;
+  height: 15%;
   margin-right: 10%;
   margin-top: 10px;
+  margin-left: 9%;
 }
 
 .couple {
   transform: scale(0.8);
+  margin-top: -6em;
+  margin-left: -2em;
 }
 
 .content-container {
