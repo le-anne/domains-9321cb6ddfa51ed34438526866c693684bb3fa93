@@ -2,11 +2,13 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 
 module.exports = {
+  
   mode: process.env.NODE_ENV || 'development',
   entry: "./src/App.js",
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
+    publicPath: "/lovemintedApp/", // Replace <your-repo-name> with the actual name of your repository  
   },
   module: {
     rules: [

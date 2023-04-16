@@ -1,7 +1,8 @@
 {
-  "name": "domains",
-  "private": true,
-  "version": "0.0.0",
+  "name": "lovemintedApp",
+  "version": "1.0.0",
+  "homepage": "https://le-anne.github.io/lovemintedApp/",
+
   "scripts": {
     "dev": "vite",
     "build": "webpack --config webpack.config.js",
