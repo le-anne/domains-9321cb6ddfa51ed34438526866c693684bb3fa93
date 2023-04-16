@@ -1,7 +1,8 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const path = require("path");
 
 module.exports = {
-  entry: "./src/app.js",
+  entry: "./src/App.js", // Change this line to point to App.js
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
@@ -22,9 +23,13 @@ module.exports = {
       template: "./src/index.html",
     }),
   ],
+  resolve: {
+    alias: {},
+  },
   devServer: {
     contentBase: path.join(__dirname, "dist"),
     compress: true,
     port: 3001,
   },
 };
+
