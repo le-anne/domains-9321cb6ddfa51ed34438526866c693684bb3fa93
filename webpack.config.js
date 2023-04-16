@@ -8,7 +8,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
-    publicPath: "/lovemintedApp/", // Replace <your-repo-name> with the actual name of your repository  
+    publicPath: process.env.PUBLIC_URL || "/", // Add this line // Replace <your-repo-name> with the actual name of your repository  
   },
   module: {
     rules: [
@@ -50,6 +50,7 @@ module.exports = {
     }),
   ],
   resolve: {
+    extensions: ['.js', '.jsx'],
     alias: {},
   },
   devServer: {
